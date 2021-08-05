@@ -1,0 +1,29 @@
+.fly-left {
+    animation: flyInFromLeft ease-in-out 750ms;
+  }
+  
+  @keyframes flyInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+  .fly-right {
+    animation: flyInFromRight ease-in-out 750ms;
+  }
+  
+  @keyframes flyInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(+50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
