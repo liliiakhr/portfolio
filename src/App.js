@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import Main from './components/Main';
 import { createMuiTheme ,ThemeProvider} from '@material-ui/core/styles';
