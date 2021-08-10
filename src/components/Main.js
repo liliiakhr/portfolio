@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Animation from './Animation';
 import girl from '../assets/girl.json';
 import Typist from 'react-typist';
