@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css';
 import Main from './components/Main';
 import { createMuiTheme ,ThemeProvider} from '@material-ui/core/styles';
@@ -19,6 +20,7 @@ const theme = createMuiTheme({
     // light
     success: {
       main: '#F2E5D7',
+      light: '#FEEFEC'
     },
     // brown 2 shades lighter
     action:{

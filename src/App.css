@@ -1,4 +1,26 @@
-.fly-left {
+ul li{
+  list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .fly-left {
     animation: flyInFromLeft ease-in-out 750ms;
   }
   
@@ -26,4 +48,4 @@
       opacity: 1;
       transform: translateX(0%);
     }
-  }
+  } */

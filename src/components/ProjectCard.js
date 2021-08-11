@@ -4,17 +4,20 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link,Card, CardActionArea, CardActions, CardContent, CardMedia } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
+    maxWidth: 445,
     justifyContent: "center",
     margin: "20px auto",
+    [theme.breakpoints.down('xs')]: {
+        maxWidth: "300px"
+    },
 
   },
   media: {
     height: "240px",
   },
-});
+}));
 
 function ProjectCard({name, description, stack, image, link, repo, repoServer}) {
     const classes = useStyles();
