@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+html{
+  font-family: 'Source Serif Pro', serif;
+}
+body{
+  font-family: 'Source Serif Pro', serif;
+}
 ul li{
   list-style-type: none;
 }
-
+ul li i{
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+}
+.contact-icons i{
+  font-size: 38px;
+  margin: 20px;
+  color: #52505E;
+}
+.welcomeSection p{
+  font-size:20px;
+  line-height: 10px;
+}
+.soft ul li{
+  line-height: 35px;
+}
 
 
 

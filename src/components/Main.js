@@ -63,6 +63,7 @@ function Main() {
         backgroundSize: 'cover',
 		minHeight: "100vh",
 		display: "flex",
+        flexDirection: "column",
 		alignItems: "center",
 		justifyContent: "center",
 	};
@@ -72,6 +73,8 @@ function Main() {
 		display: "flex",
 		alignItems: "center",
 		justifyContent: "center",
+        flexDirection: "column",
+        color: "#FEEFEC",   
 	};
     const aboutSection = {
 		backgroundColor: "#52505E",
@@ -81,6 +84,8 @@ function Main() {
         flexDirection: "column",
 		alignItems: "center",
 		justifyContent: "center",
+        padding:"8px"
+
 	};
     const projectsSection = {
 		backgroundColor: "#FDE7E1",
@@ -90,17 +95,6 @@ function Main() {
 		justifyContent: "center",
         padding: "20px",
 	};
-    const contactSection = {
-		backgroundColor: "#FDE7E1",
-		minHeight: "100vh",
-		display: "flex",
-		alignItems: "center",
-		justifyContent: "center",
-	};
-
-
-
-
 
     return (
         <div className={classes.root}>
@@ -116,24 +110,29 @@ function Main() {
                             PROJECTS
                         </Link>
                     </Button>
-                    <Button>
+                    {/* <Button>
                         <Link className={classes.link} href="#contact">
                             CONTACT
                         </Link>
-                    </Button>
+                    </Button> */}
                 </Toolbar>
             </AppBar>
 
             <Grid className="welcomeSection" style={welcomeSection}>
                 <Typist>
-                    Hi!
+                    <p> Hi!</p>
                     <br/>
-                    My name is Liliia Khrystiuk
+                    <p>My name is Liliia Khrystiuk</p>
                     <br/>
-                    I am a Full-Stack Developer
+                    <p>I am a Full-Stack Developer</p>
                     <br/>
-                    Welcome to my page!
+                    <p>Welcome to my page!</p>
                 </Typist>
+                <div className="contact-icons">
+                    <i class="fas fa-envelope"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github-square"></i>
+                </div>
             </Grid>
 
 
@@ -141,33 +140,42 @@ function Main() {
 
 
             <Grid container id="about">
-                <Grid item xs={12} sm={6} className="aboutSection" style={aboutSection} >
-                    <h1>About</h1>
-                    <p>This is about me!</p> 
-                    <hr style={{ width:"100px"}}/>
+                <Grid item xs={12} sm={4} className="aboutSection" style={aboutSection} >
                     <h2>Tech skills</h2>
                     <ul>
                         <li> <i class="fab fa-react"></i> React</li>
-                        <li>Javascript</li> 
-                        <li>NodeJS</li>
-                        <li>HTML5</li>
-                        <li>Canvas</li>
-                        <li>CSS</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>Express</li>
-                        <li>Axios</li>
-                        <li>SQL</li>
-                        <li>Tableau</li>
-                        <li>Bootstrap</li>
-                        <li>Jira</li>
-                        <li>Agile</li>
-                        <li>Pair Programming</li> 
+                        <li> <i class="fab fa-js"></i> Javascript</li> 
+                        <li> <i class="fab fa-node-js"></i> NodeJS</li>
+                        <li> <i class="fab fa-html5"></i>HTML5 & Canvas</li>  
+                        <li> <i class="fab fa-css3-alt"></i> CSS </li>
+                        <li> <i class="fas fa-database"></i> MongoDB & Mongoose</li>
+                        <li> <i class="fas fa-server"></i>Express</li>
+                        <li> <i class="fab fa-bootstrap"></i>Botstrap</li>
+                        <li> <i class="fas fa-chevron-right"></i> Material UI</li>  
+                        <li> <i class="fas fa-plug"></i>Axios</li>
+                        <li><i class="fas fa-table"></i>SQL</li>
+                        <li> <i class="fas fa-chart-pie"></i>Tableau</li>
+                        <li><i class="fas fa-project-diagram"></i> Jira</li>
+                        <li><i class="fas fa-chart-line"></i> Agile</li>
+                        <li><i class="fas fa-hands-helping"></i> Pair Programming</li> 
+                        <li> <i class="fab fa-github"></i> Git & GitHub</li> 
+                        
                         
                     </ul>
                     
+
+                </Grid>
+                <Grid item xs={12} sm={4} className="animationSection" style={animationSection} >
+                    <h1>About</h1>
+                    <p>Junior Full Stack Web Developer with background in business and Data Analytics. </p> 
+
+                    <div>
+                        <Animation width={300} height={300} animation={girl}/>
+                    </div>
+                </Grid>
+                <Grid item xs={12} sm={4} className="aboutSection soft" style={aboutSection} >
                     <h2>Soft skills</h2>
-                    <ul>
+                    <ul className="soft-skills">
                         <li>Team work</li>
                         <li>Attention to detail</li>
                         <li>Eagerness to learn</li>
@@ -176,7 +184,7 @@ function Main() {
                     </ul>
                     <hr style={{ width:"100px"}}/>
                     <h2>Languages</h2>
-                    <ul>
+                    <ul className="languages">
                         <li>English (fluent)</li>
                         <li>Spanish (fluent)</li>
                         <li>Russian (fluent)</li>
@@ -186,11 +194,6 @@ function Main() {
                         <li>Polish (intermediate)</li>
                     </ul>
                     <hr style={{ width:"100px"}}/>
-                </Grid>
-                <Grid item xs={12} sm={6} className="animationSection" style={animationSection} >
-                    <div>
-                        <Animation width={300} height={300} animation={girl}/>
-                    </div>
                 </Grid>
             </Grid>
 
