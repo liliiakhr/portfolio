@@ -119,7 +119,7 @@ function Main() {
             </AppBar>
 
             <Grid className="welcomeSection" style={welcomeSection}>
-                <Typist>
+                {/* <Typist> */}
                     <p> Hi!</p>
                     <br/>
                     <p>My name is Liliia Khrystiuk</p>
@@ -127,11 +127,11 @@ function Main() {
                     <p>I am a Full-Stack Developer</p>
                     <br/>
                     <p>Welcome to my page!</p>
-                </Typist>
+                {/* </Typist> */}
                 <div className="contact-icons">
-                    <i class="fas fa-envelope"></i>
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-github-square"></i>
+                    <a href="mailto:liliya.khrystyuk@gmail.com"><i class="fas fa-envelope"></i> </a> 
+                    <a target="_blank" href=" https://www.linkedin.com/in/liliia-khrystiuk/"> <i class="fab fa-linkedin"></i></a> 
+                    <a target="_blank" href="https://github.com/liliiakhr"><i class="fab fa-github-square"></i></a> 
                 </div>
             </Grid>
 
