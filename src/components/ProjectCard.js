@@ -31,13 +31,14 @@ function ProjectCard({name, description, stack, image, link, repo, repoServer}) 
                     title="App image"
                     /> */}
                     <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
+                    <Typography gutterBottom variant="h5" className="project-name" component="h2">
                         {name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
                         {description}
                     </Typography>
-                    <Typography variant="body3" color="textSecondary" component="p">
+                    <br />
+                    <Typography className="tech-stack" variant="body3" color="textSecondary" component="p">
                         Tech stack: {stack}
                     </Typography>
                     </CardContent>

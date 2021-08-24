@@ -7,6 +7,8 @@ import kolabImg from '../assets/kolab.png';
 import codeScapeImg from '../assets/codescape.png';
 import game from '../assets/game.png';
 import weather from '../assets/weather.png';
+import logo from "../assets/logo_transparent.png";
+import avatar from "../assets/avatar.jpeg";
 
 import {
 	Link,
@@ -119,18 +121,19 @@ function Main() {
             </AppBar>
 
             <Grid className="welcomeSection" style={welcomeSection}>
-                {/* <Typist> */}
+                    <div className="avatar-wrapper">
+                        <img src={avatar} /> 
+                    </div>
                     <p> Hi!</p>
                     <br/>
-                    <p>My name is Liliia Khrystiuk</p>
-                    <br/>
-                    <p>I am a Full-Stack Developer</p>
+                    <p className="i-am">I am Liliia Khrystiuk - Full Stack Developer.</p>
                     <br/>
                     <p>Welcome to my page!</p>
-                {/* </Typist> */}
+                    {/* <img width="100px" src={logo} /> */}
+               
                 <div className="contact-icons">
-                    <a href="mailto:liliya.khrystyuk@gmail.com"><i class="fas fa-envelope"></i> </a> 
-                    <a target="_blank" href=" https://www.linkedin.com/in/liliia-khrystiuk/"> <i class="fab fa-linkedin"></i></a> 
+                    <a href="mailto:liliya.khrystyuk@gmail.com"><i class="fas fa-envelope"></i></a> 
+                    <a target="_blank" href=" https://www.linkedin.com/in/liliia-khrystiuk/"><i class="fab fa-linkedin"></i></a> 
                     <a target="_blank" href="https://github.com/liliiakhr"><i class="fab fa-github-square"></i></a> 
                 </div>
             </Grid>
@@ -167,7 +170,7 @@ function Main() {
                 </Grid>
                 <Grid item xs={12} sm={4} className="animationSection" style={animationSection} >
                     <h1>About</h1>
-                    <p>Junior Full Stack Web Developer with background in business and Data Analytics. </p> 
+                    <p>I am an aspiring Junior Full Stack Web Developer coming from a background in International Business and Data Analytics. </p> 
 
                     <div>
                         <Animation width={300} height={300} animation={girl}/>
@@ -179,19 +182,19 @@ function Main() {
                         <li>Team work</li>
                         <li>Attention to detail</li>
                         <li>Eagerness to learn</li>
-                        <li>Great communication</li>
-                        <li>Teamwork & Independenc</li>
+                        <li>Communication</li>
+                        <li>Problem solving</li>
                     </ul>
                     <hr style={{ width:"100px"}}/>
                     <h2>Languages</h2>
                     <ul className="languages">
-                        <li>English (fluent)</li>
-                        <li>Spanish (fluent)</li>
-                        <li>Russian (fluent)</li>
-                        <li>Ukrainian (fluent)</li>
-                        <li>German (intermediate)</li>
-                        <li>Portuguese (intermediate)</li>
-                        <li>Polish (intermediate)</li>
+                        <li> 🇺🇸 English (fluent)</li>
+                        <li> 🇪🇸 Spanish (fluent)</li>
+                        <li> 🇷🇺 Russian (native)</li>
+                        <li> 🇺🇦 Ukrainian (native)</li>
+                        <li> 🇩🇪 German (intermediate)</li>
+                        <li> 🇧🇷 Portuguese (intermediate)</li>
+                        <li> 🇵🇱 Polish (intermediate)</li>
                     </ul>
                     <hr style={{ width:"100px"}}/>
                 </Grid>
